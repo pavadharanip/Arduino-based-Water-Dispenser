@@ -112,6 +112,7 @@ The system operates through the following steps:
 **Libraries Used**
 
 #include <DHT.h>
+[Automated Handwash System Code](automated%20handwash.ino)
 
 ---
 
@@ -130,21 +131,7 @@ Light is ON
 TEMPERATURE: 33.00 C
 Buzzer ON
 
-The actual output depends on sensor readings and the configured temperature threshold.
-
----
-
-**📂 Project Structure**
-
-Smart-Hand-Washing-System/
-│
-├── README.md
-│
-├── Hand_Washing_System.ino
-│
-└── Images/
-    ├── circuit_connection.jpg
-    └── project_setup.jpg
+The actual output depends on sensor readings and the configured temperature threshold
 
 ---
 
