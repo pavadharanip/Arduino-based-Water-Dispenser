@@ -176,8 +176,6 @@ The actual output depends on sensor readings and the configured temperature thre
          v
       Repeat
 
-Note: This workflow represents the current sequential control logic. Temperature monitoring is paused while the program waits for hand removal.
-
 ---
 
 **📂 Project Structure**
