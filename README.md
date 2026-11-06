@@ -64,7 +64,7 @@ Note: The relay and sensor modules should be connected according to their operat
 
 ---
 
-![Smart Hand Washing System](Images/dht%20handwash.jpg)
+![Smart Hand Washing System](Images/dht%20handwash.jpeg)
 
 **⚙️ Working Principle**
 
