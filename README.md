@@ -64,6 +64,8 @@ Note: The relay and sensor modules should be connected according to their operat
 
 ---
 
+![Smart Hand Washing System](Images/dht%20handwash.jpg)
+
 **⚙️ Working Principle**
 
 The system operates through the following steps:
@@ -112,6 +114,7 @@ The system operates through the following steps:
 **Libraries Used**
 
 #include <DHT.h>
+
 [Automated Handwash System Code](automated%20handwash.ino)
 
 ---
