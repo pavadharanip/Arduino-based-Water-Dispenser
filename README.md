@@ -134,50 +134,6 @@ The actual output depends on sensor readings and the configured temperature thre
 
 ---
 
-**🔄 System Workflow**
-
-       START
-         |
-         v
-   Initialize Sensors
-         |
-         v
-    Read IR Sensor
-         |
-         v
-    Read LDR Sensor
-         |
-         v
-  Hand and Light Conditions
-         |
-         v
-    Activate Relay
-         |
-         v
-   Water Pump ON
-         |
-         v
-    Wait 3 Seconds
-         |
-         v
-    Water Pump OFF
-         |
-         v
-   Read Temperature
-         |
-         v
- Temperature >= Threshold?
-       /       \
-     YES        NO
-      |          |
-      v          v
-  Buzzer ON   Buzzer OFF
-       \        /
-         v
-      Repeat
-
----
-
 **📂 Project Structure**
 
 Smart-Hand-Washing-System/
