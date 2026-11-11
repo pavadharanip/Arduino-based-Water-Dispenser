@@ -1,6 +1,6 @@
 # ARDUINO BASED AUTOMATED HAND HYGIENE SYSTEM
 
-**📌 Project Overview**
+**📌 PROJECT OVERVIEW**
 
 The Arduino-Based Smart Hand Washing System is an embedded systems project designed to improve hand hygiene through automatic water pump control and environmental temperature monitoring.
 
@@ -10,7 +10,7 @@ The system combines sensor-based automation with real-time monitoring to provide
 
 ---
 
-**🎯 Project Objectives**
+**🎯 PROJECT OBJECTIVES**
 
 - To automate water flow using an IR sensor.
 - To control a water pump through a relay module.
@@ -21,7 +21,7 @@ The system combines sensor-based automation with real-time monitoring to provide
 
 ---
 
-**✨ Features**
+**✨ FEATURES**
 
 - Automatic Hand Detection: Detects hand presence using an IR sensor.
 - Automatic Water Pump Control: Controls the water pump through a relay module.
@@ -33,7 +33,7 @@ The system combines sensor-based automation with real-time monitoring to provide
 
 ---
 
-**🛠️ Hardware Components Required**
+**🛠️ HARDWARE COMPONENTS REQUIRED**
 
 Component| Quantity
 Arduino Uno| 1
@@ -49,7 +49,7 @@ External Power Supply| 1
 
 ---
 
-**🔌 Pin Connections**
+**🔌 PIN CONNECTIONS**
 
 Component| Arduino Pin
 IR Sensor OUT| Digital Pin 7
@@ -66,23 +66,23 @@ Note: The relay and sensor modules should be connected according to their operat
 
 ![DHT Handwash Project](./dht%20handwash.jpeg)
 
-**⚙️ Working Principle**
+**⚙️ WORKING PRINCIPLE**
 
 The system operates through the following steps:
 
-**1. Hand Detection**
+**1. HAND DETECTION**
 
 - The IR sensor continuously detects the presence of a hand.
 - When a hand is detected, the sensor sends a LOW signal (assuming an active-LOW IR module).
 - Arduino checks the LDR condition before activating the water pump.
 
-**2. Light Detection**
+**2. LIGHT DETECTION**
 
 - The LDR sensor detects the surrounding light intensity.
 - The Arduino reads the digital output of the LDR module.
 - The system identifies the light condition based on the sensor output.
 
-**3. Automatic Water Pump Control**
+**3. AUTOMATIC WATER PUMP CONTROL**
 
 - When both hand detection and the required light condition are satisfied, Arduino activates the relay.
 - The relay switches ON the water pump.
@@ -90,13 +90,13 @@ The system operates through the following steps:
 - After 3 seconds, the relay switches OFF the pump.
 - The system waits for the hand to be removed before accepting another detection.
 
-**4. Temperature Monitoring**
+**4. TEMPERATURE MONITORING**
 
 - The DHT11 sensor measures the surrounding temperature.
 - Arduino reads the temperature using the DHT library.
 - The temperature value is displayed in the Serial Monitor.
 
-**5. Buzzer Alert**
+**5. BUZZER ALERT**
 
 - The measured temperature is compared with the predefined threshold.
 - When the temperature reaches or exceeds the threshold, the buzzer is activated.
@@ -104,14 +104,14 @@ The system operates through the following steps:
 
 ---
 
-💻 Software Requirements
+# 💻 SOFTWARE REQUIREMENTS
 
 - Arduino IDE
 - Arduino C/C++ programming
 - Adafruit DHT Sensor Library
 - Adafruit Unified Sensor Library
 
-**Libraries Used**
+**LIBRARIES USED**
 
 #include <DHT.h>
 
@@ -119,11 +119,11 @@ The system operates through the following steps:
 
 ---
 
-**📟 Serial Monitor Output**
+**📟 SERIAL MONITOR OUTPUT**
 
 The Arduino Serial Monitor displays the system's operating status and temperature readings.
 
-**Example output:**
+**EXAMPLE OUTPUT:**
 
 Light is ON
 Hand Detected
@@ -138,7 +138,7 @@ The actual output depends on sensor readings and the configured temperature thre
 
 ---
 
-**🚀 Applications**
+**🚀 APPLICATIONS**
 
 - Public washrooms
 - Educational institutions
@@ -148,7 +148,7 @@ The actual output depends on sensor readings and the configured temperature thre
 
 ---
 
-**🔮 Future Improvements**
+**🔮 FUTURE IMPROVEMENTS**
 
 - Implement continuous temperature monitoring without blocking delays.
 - Introduce an LCD display to show real-time temperature readings.
@@ -159,7 +159,7 @@ The actual output depends on sensor readings and the configured temperature thre
 
 ---
 
-**📚 Learning Outcomes**
+**📚 LEARNING OUTCOMES**
 
 Through this project, I gained practical knowledge of:
 
@@ -170,7 +170,3 @@ Through this project, I gained practical knowledge of:
 - DHT11 temperature sensor interfacing.
 - Conditional statements and delay functions.
 - Serial communication and real-time sensor monitoring.
-  
-**⭐ Acknowledgement**
-
-This project was developed as a hands-on embedded systems learning project to understand sensor interfacing, automation, and hardware control using Arduino.
