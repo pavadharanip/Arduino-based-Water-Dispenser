@@ -1,6 +1,6 @@
 # ARDUINO BASED AUTOMATED HAND HYGIENE SYSTEM
 
-**📌 PROJECT OVERVIEW**
+**📌 Project Overview**
 
 The Arduino-Based Smart Hand Washing System is an embedded systems project designed to improve hand hygiene through automatic water pump control and environmental temperature monitoring.
 
@@ -10,7 +10,7 @@ The system combines sensor-based automation with real-time monitoring to provide
 
 ---
 
-**🎯 PROJECT OBJECTIVES**
+**🎯 Project Obectives**
 
 - To automate water flow using an IR sensor.
 - To control a water pump through a relay module.
@@ -21,7 +21,7 @@ The system combines sensor-based automation with real-time monitoring to provide
 
 ---
 
-**✨ FEATURES**
+**✨ Features**
 
 - Automatic Hand Detection: Detects hand presence using an IR sensor.
 - Automatic Water Pump Control: Controls the water pump through a relay module.
@@ -33,7 +33,7 @@ The system combines sensor-based automation with real-time monitoring to provide
 
 ---
 
-**🛠️ HARDWARE COMPONENTS REQUIRED**
+**🛠️ Hardware Components Required**
 
 Component| Quantity
 Arduino Uno| 1
@@ -49,7 +49,7 @@ External Power Supply| 1
 
 ---
 
-**🔌 PIN CONNECTIONS**
+**🔌 Pin Connections**
 
 Component| Arduino Pin
 IR Sensor OUT| Digital Pin 7
@@ -66,23 +66,23 @@ Note: The relay and sensor modules should be connected according to their operat
 
 ![DHT Handwash Project](./dht%20handwash.jpeg)
 
-**⚙️ WORKING PRINCIPLE**
+**⚙️ Working Principle**
 
 The system operates through the following steps:
 
-**1. HAND DETECTION**
+**1. Hand Detection**
 
 - The IR sensor continuously detects the presence of a hand.
 - When a hand is detected, the sensor sends a LOW signal (assuming an active-LOW IR module).
 - Arduino checks the LDR condition before activating the water pump.
 
-**2. LIGHT DETECTION**
+**2. Light Detection**
 
 - The LDR sensor detects the surrounding light intensity.
 - The Arduino reads the digital output of the LDR module.
 - The system identifies the light condition based on the sensor output.
 
-**3. AUTOMATIC WATER PUMP CONTROL**
+**3. Automatic Water Pump Control**
 
 - When both hand detection and the required light condition are satisfied, Arduino activates the relay.
 - The relay switches ON the water pump.
@@ -90,13 +90,13 @@ The system operates through the following steps:
 - After 3 seconds, the relay switches OFF the pump.
 - The system waits for the hand to be removed before accepting another detection.
 
-**4. TEMPERATURE MONITORING**
+**4. Temperature Monitoring**
 
 - The DHT11 sensor measures the surrounding temperature.
 - Arduino reads the temperature using the DHT library.
 - The temperature value is displayed in the Serial Monitor.
 
-**5. BUZZER ALERT**
+**5. Buzzer Alert**
 
 - The measured temperature is compared with the predefined threshold.
 - When the temperature reaches or exceeds the threshold, the buzzer is activated.
@@ -104,14 +104,14 @@ The system operates through the following steps:
 
 ---
 
-# 💻 SOFTWARE REQUIREMENTS
+# 💻 Software Requirements
 
 - Arduino IDE
 - Arduino C/C++ programming
 - Adafruit DHT Sensor Library
 - Adafruit Unified Sensor Library
 
-**LIBRARIES USED**
+**Libraries Used**
 
 #include <DHT.h>
 
@@ -119,11 +119,11 @@ The system operates through the following steps:
 
 ---
 
-**📟 SERIAL MONITOR OUTPUT**
+**📟 Serial Monitor Output**
 
 The Arduino Serial Monitor displays the system's operating status and temperature readings.
 
-**EXAMPLE OUTPUT:**
+**Example Output:**
 
 Light is ON
 Hand Detected
@@ -138,7 +138,7 @@ The actual output depends on sensor readings and the configured temperature thre
 
 ---
 
-**🚀 APPLICATIONS**
+**🚀 Applications**
 
 - Public washrooms
 - Educational institutions
@@ -148,7 +148,7 @@ The actual output depends on sensor readings and the configured temperature thre
 
 ---
 
-**🔮 FUTURE IMPROVEMENTS**
+**🔮 Future Improvements**
 
 - Implement continuous temperature monitoring without blocking delays.
 - Introduce an LCD display to show real-time temperature readings.
@@ -159,7 +159,7 @@ The actual output depends on sensor readings and the configured temperature thre
 
 ---
 
-**📚 LEARNING OUTCOMES**
+**📚 Learning Outcomes**
 
 Through this project, I gained practical knowledge of:
 
